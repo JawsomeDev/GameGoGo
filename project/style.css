@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR:wght@100..900&family=Orbit&display=swap');
@@ -49,7 +48,7 @@ header button{
     cursor: pointer;
 }
 header.active{
-  background-color: rgba(0,0,0);
+  background-color: rgba(0,0,0,1);
   animation:fadeIn 0.5s ease-in-out;
 }
 
@@ -126,7 +125,7 @@ main h2 span::after{
 }
 
 section{
-    font-family: "Popins", sans-serif;
+    font-family: "IBM Plex Sans KR", sans-serif;
     padding: 5rem 0;
 }
 section:nth-child(2n){
@@ -340,71 +339,23 @@ section.contact .contact-me .right button{
     }
 }
 
-@media screen and (max-width:992px){
-    html{
-        font-size: 14px;
-    }
-
-    /* 메인 영역 container 기준 너비 변경 */
-    main .container{
-        width: 768px;
-    }
-
-    section .faq-me .faq-inner{
-        width:100%;
-    }
-}
-
-@media screen and (max-width:768px){
-    html{
-        font-size: 13px;
-    }
-
-    main .container{
-        width: 576px;
-    }
-    section .container{
-        width: 400px;
-    }
-    section .do-me .do-inner{
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width:576px) {
-    html{
-        font-size: 12px;
-    }
-    main .container{
-        width: 400px;
-    }
-    section .container{
-        width: 360px;
-    }
-}
-
-@media screen and (max-width:400px) {
-    html{
-        font-size: 11px;
-    }
-    main .container{
-        width: 320px;
-    }
-    section .container{
-        width: 320px;
-    }
-    main h4{
-        font-size: 1.5rem;
-    }
-    section .title h2{
-        font-size: 3rem;
-    }
-}
-
 .navbar-logo {
     height: 60px; /* 네비바 높이와 비슷하게 */
     width: auto;  /* 비율 유지 */
     vertical-align: middle;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: rgb(0, 0, 0); /* 배경색 추가 */
+  color: white; /* 텍스트 색상 */
+}
+
+.footer img {
+  width: 100px; /* 로고 크기 조정 */
+  margin-bottom: 5px; /* 로고와 텍스트 사이 간격 */
+}
