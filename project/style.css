@@ -6,7 +6,7 @@
 *{ 
   font-family: "IBM Plex Sans KR", serif;
     margin: 0;
-    padding: 2px;   
+    padding: 0;   
     box-sizing: border-box;
 }
 a, a:link, a:visited{
@@ -28,6 +28,7 @@ header{
     z-index: 1;
     width: 100%;
     padding: 1rem;
+    background-color: black;
 }
 
 header .container{
@@ -352,10 +353,103 @@ section.contact .contact-me .right button{
   justify-content: center;
   padding: 1rem 0;
   background-color: rgb(0, 0, 0); /* 배경색 추가 */
+  position: relative;
   color: white; /* 텍스트 색상 */
 }
 
 .footer img {
-  width: 100px; /* 로고 크기 조정 */
+  width: 200px; /* 로고 크기 조정 */
   margin-bottom: 5px; /* 로고와 텍스트 사이 간격 */
+}
+
+/* 로그인 페이지 스타일 */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: none;
+    background-color: #10253a;
+    padding-top: 50px;
+    flex: 1;
+}
+
+.login-box {
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    color: #000000;
+}
+
+.login-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: rgba(0,0,0);
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgba(0,0,0);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    
+    border-radius: 5px;
+}
+
+.checkbox-group {
+    text-align: left;
+    margin-bottom: 1rem;
+    color: rgba(0,0,0);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #270a8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #4c90bb;
+}
+
+/* 푸터 로고 크기 조정 */
+.footer-logo {
+    width: 120px;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.gender-group .gender{
+    margin-left: -80px;
+}
+
+.login-box small a{
+    color: rgb(0, 106, 255);
 }
